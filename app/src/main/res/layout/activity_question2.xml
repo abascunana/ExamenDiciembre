@@ -6,11 +6,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/determinateBar"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+        android:layout_width="391dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="4dp"
+        android:progress="32"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.checkbox.MaterialCheckBox
         android:id="@+id/checkbox1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+
+
         android:layout_marginTop="27dp"
         android:text="Do stuff"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,6 +33,8 @@
 
     <com.google.android.material.checkbox.MaterialCheckBox
         android:id="@+id/checkbox2"
+
+
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -34,12 +50,16 @@
         android:layout_marginTop="28dp"
         android:text="Do stuff"
         app:layout_constraintEnd_toEndOf="parent"
+
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkbox4" />
 
     <com.google.android.material.checkbox.MaterialCheckBox
         android:id="@+id/checkbox4"
         android:layout_width="0dp"
+
+
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="Do stuff"
@@ -56,6 +76,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+
+
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -63,6 +85,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+
         android:text="Previous"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -70,6 +94,8 @@
         app:layout_constraintTop_toBottomOf="@+id/checkbox1" />
 
     <Button
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

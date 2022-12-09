@@ -8,54 +8,59 @@
     android:layout_height="match_parent">
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="357dp"
-        android:layout_height="215dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="81dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/textInputEditText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/logo">
-
-
-    </ImageView>
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="42dp"
-        app:layout_constraintBottom_toTopOf="@+id/cbutton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
     <Button
         android:id="@+id/cbutton"
-        android:layout_width="106dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="64dp"
+        android:layout_width="149dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="72dp"
         android:text="Continue"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+
         app:layout_constraintBottom_toTopOf="@+id/lbutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
 
     <Button
         android:id="@+id/lbutton"
-        android:layout_width="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+    android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="126dp"
+        android:layout_marginBottom="102dp"
         android:text="Login As Guest"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cbutton" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="91dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/donut_circle" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="57dp"
+        android:hint="Filled box(default)"
+        app:layout_constraintBottom_toTopOf="@+id/cbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="66dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
